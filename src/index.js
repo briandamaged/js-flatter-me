@@ -1,5 +1,6 @@
 'use strict';
 
+const util = require('util');
 const renderers = require('./path_renderers');
 
 function flatten(obj, options) {
@@ -12,7 +13,10 @@ function flatten(obj, options) {
   const retval = {};
 
   function __flatten(o, fragment) {
-    if(Array.isArray(o)) {
+    if(util.isNull(o)) {
+      const key = render(fragment);
+      retval[key] = o;
+    } else if(Array.isArray(o)) {
       __flattenArray(o, fragment);
     } else if((typeof o) === 'object') {
       __flattenObject(o, fragment);
