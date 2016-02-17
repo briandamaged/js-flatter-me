@@ -1,0 +1,22 @@
+{
+  "name": "flatter-me",
+  "version": "0.1.0",
+  "description": "Recursively \"Flatten\" your objects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/briandamaged/js-flatter-me.git"
+  },
+  "keywords": [
+    "flatten"
+  ],
+  "author": "Brian Lauber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briandamaged/js-flatter-me/issues"
+  },
+  "homepage": "https://github.com/briandamaged/js-flatter-me#readme"
+}
